@@ -1,0 +1,15 @@
+# Archivo: aerial_cars_data.yaml
+# Este archivo configura YOLOv8 para saber dónde buscar los datos y cuántas clases tiene.
+
+# 1. Rutas a los conjuntos de datos
+# Estas rutas son para el entorno de Google Colab, donde se subirán los archivos train.txt/test.txt
+train: /content/aerial-cars-dataset-master/train.txt
+val: /content/aerial-cars-dataset-master/test.txt
+
+# 2. Número de clases (nc)
+# Encontraste 4 clases: Car, Truck, Bus, Van
+nc: 4 
+
+# 3. Nombres de las clases (names)
+# Deben estar en el orden de ID 0, 1, 2, 3 que encontraste en el análisis
+names: ['Car', 'Truck', 'Bus', 'Van']
